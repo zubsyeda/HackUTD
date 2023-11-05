@@ -1,17 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
-import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import { BasicButtonComponent } from './components/BasicButtonComponent';
+import { ChartComponent } from './components/ChartComponent';
+import { MainComponent } from './components/MainComponent';
 
-function BasicButtonExample() {
-  return (
-    <DropdownButton id="dropdown-basic-button" title="Dropdown button">
-      <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-      <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-      <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-    </DropdownButton>
-  );
-}
 
 function CardContainer() {
   return (
@@ -54,28 +46,23 @@ function CardContainer() {
 
 
 function App() {
-  return (
-    <div className="App">
-      <div className='maincomponent'>
-        <h1>InsurancePlanner</h1>
-        <div className='container'>
-          <p>This web application will output the top natural disasters that happen in your state to help you get an idea </p>
-          <p>of the insurance your small business may need</p>
-        </div>
-        <div>
-        <BasicButtonExample/>
-          <p></p>
-          
-        </div>
-      </div>
+    const [ selectedState, setSelectedState] = React.useState('')
 
-      <div className="secondcomponent">
-        <h2>News Outlet</h2>
-        <CardContainer/>
-        <h2>Customer Response Analysis</h2>
+    return (
+      <div className="App">
+        <MainComponent setSelectedState={setSelectedState}/>
+
+
+        <div className="secondcomponent">
+          {selectedState && (
+                  <ChartComponent selectedState={selectedState}/>
+              )}
+          <h2>News Outlet</h2>
+          <CardContainer/>
+          <h2>Customer Response Analysis</h2>
+        </div>
       </div>
-    </div>
-  );
+    );
 }
 
 
