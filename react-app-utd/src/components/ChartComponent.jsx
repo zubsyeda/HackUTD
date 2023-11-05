@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import Papa from 'papaparse';
 import Chart from 'chart.js/auto'
 
-export const ChartComponent = () => {
-    const [chartData, setChartData] = useState(null);
-    const [selectedState, setSelectedState] = useState('AK')
+export const ChartComponent = ({ currentState }) => {
+    // const [chartData, setChartData] = useState(null);
+    // const [currentState, setcurrentState] = useState('AK')
 
-    const chart = ""
+    const chartRef = useRef(null);
 
     async function fetchData(){
         try { 
@@ -38,49 +38,56 @@ export const ChartComponent = () => {
                 percentage: parseFloat(entry.percentage),
             });
         });
+        // console.log(groupedData)
         return groupedData
     }
 
     function preprocessData(data){
         const groupedData = groupDataByState(data);
-        const selectedStateData = groupedData[selectedState];
-        // setChartData(selectedStateData);
-        console.log(selectedStateData);
-        const labels = selectedStateData.map((incident) => incident.incident_type);
-        const percentages = selectedStateData.map((incident) => incident.percentage);
-        console.log(labels)
-        console.log(percentages)
+     
+        const currentStateData = groupedData[currentState];
+   
+        const labels = currentStateData.map((incident) => incident.incident_type);
+        const percentages = currentStateData.map((incident) => incident.percentage);
+
 
         const chartData = {
             labels: labels,
             datasets: [{
-                label: `Incident Rates for ${selectedState}`,
+                label: `Incident Rates for ${currentState}`,
                 data: percentages,
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
                 borderWidth: 1,
             }]
         };
-
-        const config = {
-            type: 'bar',
-            data: chartData,
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
+        if (chartRef.current) {
+            // If the chart already exists, destroy it before creating a new one
+            chartRef.current.data = chartData;
+            chartRef.current.update();
+            // chartRef.current.destroy();
+        } else{
+            const ctx = document.getElementById('myChart').getContext('2d');
+            chartRef.current = new Chart(ctx, {
+                type: 'bar',
+                data: chartData,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
                     }
                 }
-            }
+            });
+
         }
 
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const myChart = new Chart(ctx, config);
+
     };
 
     React.useEffect(() => {
         fetchData()
-    }, [])
+    }, [currentState])
 
     return (
         <div>
