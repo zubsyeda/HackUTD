@@ -1,45 +1,47 @@
 import React from 'react'
 import { FeedBackBoxComponent } from './FeedBackBoxComponent'
 
-export const FeedBackComponent = ({ business, currentState, incident }) => {
+export const FeedBackComponent = ({ businessType, state, incident }) => {
 
     const [messageResponse, setMessageResponse] = React.useState('');
 
     async function fetchData (){
         console.log("This function is called!")
-        const apiUrl = 'https://hackutd.fly.dev/api/chatgpt';
-        
-        var jsonData = {
-            "state": currentState,
-            "businessType": business,
-            "incidentStatistic": incident
-        }
+        const apiUrl = `http://localhost:5001/api/chatgpt/${state}/${businessType}/${incident}`;
+        console.log(apiUrl)
+        // var jsonData = {
+        //     "state": currentState,
+        //     "businessType": business,
+        //     "incidentStatistic": incident
+        // }
 
         try {
             const response = await fetch(apiUrl, {
-                mode: 'cors',
-                method: 'POST',
-                // headers: {
-                //     'Content-Type': 'application/json; charset=utf-8',
-                //     // 'x-powered-by': 'Express',
-                //     // 'content-encoding': 'br',
-                //     // 'connection': 'keep-alive',
-                //     // 'keep-alive': 'timeout=5',
-                //     // 'transfer-encoding': 'chunked',
-                //     // 'server': 'Fly/7328d5b5 (2023-10-27)'
-                // },
-                body: JSON.stringify(jsonData),
+                // mode: 'no-cors',
+                method: 'GET',
+           
+                // body: JSON.stringify(jsonData),
+            }).then(response => {
+                if(response.ok){
+                  
+                    // console.log(response)
+                    response.json().then(json => {
+                        console.log(json)
+                    })
+                } else{
+                
+                }
             });
             
-            if (response.ok) {
-                const responseData = await response.json();
-                const cleanedResult = responseData.result.replace(/\\n/g, '');
-                const resultObject = JSON.parse(cleanedResult);
-                setMessageResponse(resultObject);
-                console.log(messageResponse);
-            } else {
-                throw new Error(`Error: ${response.statusText}`);
-            }
+            // if (response.ok) {
+            //     const responseData = await response.json();
+            //     const cleanedResult = responseData.result.replace(/\\n/g, '');
+            //     const resultObject = JSON.parse(cleanedResult);
+            //     setMessageResponse(resultObject);
+            //     console.log(messageResponse);
+            // } else {
+            //     throw new Error(`Error: ${response.statusText}`);
+            // }
         } catch (error) {
             console.error('Error fetching data:', error.message);
 
@@ -48,7 +50,7 @@ export const FeedBackComponent = ({ business, currentState, incident }) => {
 
     React.useEffect(() => {
         fetchData()
-    }, [business, currentState, incident])
+    }, [businessType, state, incident])
 
    return(
         <div style={{ display: 'flex', flexDirection: 'column', width: '100%', padding: '10px', backgroundColor: '#0E538C'}}>

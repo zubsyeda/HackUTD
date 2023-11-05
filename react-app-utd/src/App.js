@@ -65,7 +65,7 @@ function App() {
         {/* </div>   */}
         {/* {currentState && (
             <div style={{ width: '100%'}}>
-            <FeedBackComponent business={business} currentState={currentState} incident={incident}/>
+            <FeedBackComponent businessType={business} state={currentState} incident={incident}/>
             </div>
         )} */}
         {/* {currentState && (

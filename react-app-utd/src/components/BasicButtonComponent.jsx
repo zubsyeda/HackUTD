@@ -7,7 +7,7 @@ export const BasicButtonComponent= ({ setSelectedState }) => {
     
     const handleSelect = (selectedValue) => {
         setSelectedState(selectedValue);
-        console.log(selectedValue)
+        // console.log(selectedValue)
       };
 
     const states = [
