@@ -1,0 +1,496 @@
+,state,incident_type,count,percentage
+0,AK,Biological,121,38.05
+8,AK,Severe Storm,74,23.27
+4,AK,Flood,50,15.72
+3,AK,Fire,30,9.43
+5,AK,Freezing,14,4.4
+2,AK,Earthquake,13,4.09
+6,AK,Mud/Landslide,6,1.89
+7,AK,Other,4,1.26
+9,AK,Snowstorm,4,1.26
+1,AK,Coastal Storm,2,0.63
+14,AL,Hurricane,611,36.7
+15,AL,Severe Storm,604,36.28
+10,AL,Biological,139,8.35
+13,AL,Flood,104,6.25
+11,AL,Drought,67,4.02
+16,AL,Snowstorm,67,4.02
+17,AL,Tornado,62,3.72
+12,AL,Fire,11,0.66
+23,AR,Severe Storm,633,39.74
+20,AR,Flood,271,17.01
+22,AR,Severe Ice Storm,207,12.99
+21,AR,Hurricane,168,10.55
+18,AR,Biological,152,9.54
+25,AR,Tornado,113,7.09
+19,AR,Drought,32,2.01
+24,AR,Snowstorm,17,1.07
+30,AS,Hurricane,25,32.89
+32,AS,Typhoon,18,23.68
+26,AS,Biological,10,13.16
+31,AS,Severe Storm,8,10.53
+27,AS,Drought,5,6.58
+28,AS,Earthquake,5,6.58
+29,AS,Flood,5,6.58
+35,AZ,Fire,88,26.27
+36,AZ,Flood,82,24.48
+33,AZ,Biological,73,21.79
+39,AZ,Severe Storm,68,20.3
+38,AZ,Hurricane,15,4.48
+34,AZ,Drought,8,2.39
+37,AZ,Freezing,1,0.3
+45,CA,Fire,460,28.77
+47,CA,Flood,448,28.02
+51,CA,Severe Storm,325,20.33
+40,CA,Biological,116,7.25
+49,CA,Hurricane,58,3.63
+48,CA,Freezing,57,3.56
+43,CA,Drought,47,2.94
+41,CA,Coastal Storm,43,2.69
+44,CA,Earthquake,32,2.0
+42,CA,Dam/Levee Break,5,0.31
+46,CA,Fishing Losses,4,0.25
+52,CA,Tsunami,3,0.19
+50,CA,Other,1,0.06
+57,CO,Fire,151,23.37
+58,CO,Flood,146,22.6
+53,CO,Biological,132,20.43
+54,CO,Coastal Storm,64,9.91
+60,CO,Snowstorm,55,8.51
+56,CO,Drought,42,6.5
+59,CO,Severe Storm,28,4.33
+61,CO,Tornado,27,4.18
+55,CO,Dam/Levee Break,1,0.15
+64,CT,Hurricane,96,37.65
+66,CT,Snowstorm,60,23.53
+65,CT,Severe Storm,56,21.96
+62,CT,Biological,21,8.24
+63,CT,Flood,17,6.67
+67,CT,Tornado,5,1.96
+72,DC,Severe Storm,9,39.13
+70,DC,Hurricane,6,26.09
+73,DC,Snowstorm,3,13.04
+68,DC,Biological,2,8.7
+71,DC,Other,2,8.7
+69,DC,Earthquake,1,4.35
+78,DE,Hurricane,22,41.51
+80,DE,Snowstorm,13,24.53
+74,DE,Biological,6,11.32
+79,DE,Severe Storm,5,9.43
+76,DE,Drought,3,5.66
+77,DE,Flood,3,5.66
+75,DE,Coastal Storm,1,1.89
+87,FL,Hurricane,1219,51.83
+89,FL,Severe Storm,363,15.43
+83,FL,Fire,277,11.78
+81,FL,Biological,150,6.38
+85,FL,Freezing,147,6.25
+84,FL,Flood,73,3.1
+91,FL,Tropical Storm,54,2.3
+90,FL,Tornado,38,1.62
+82,FL,Coastal Storm,25,1.06
+86,FL,Human Cause,4,0.17
+88,FL,Other,2,0.09
+95,FM,Typhoon,23,74.19
+92,FM,Drought,6,19.35
+93,FM,Fire,1,3.23
+94,FM,Flood,1,3.23
+101,GA,Hurricane,905,39.73
+103,GA,Severe Storm,422,18.53
+96,GA,Biological,320,14.05
+105,GA,Tornado,157,6.89
+102,GA,Severe Ice Storm,152,6.67
+97,GA,Drought,144,6.32
+104,GA,Snowstorm,93,4.08
+99,GA,Flood,62,2.72
+98,GA,Fire,17,0.75
+100,GA,Freezing,6,0.26
+110,GU,Typhoon,13,68.42
+106,GU,Biological,2,10.53
+109,GU,Severe Storm,2,10.53
+107,GU,Earthquake,1,5.26
+108,GU,Fire,1,5.26
+115,HI,Hurricane,22,22.0
+113,HI,Fire,20,20.0
+118,HI,Severe Storm,16,16.0
+114,HI,Flood,14,14.0
+111,HI,Biological,9,9.0
+112,HI,Earthquake,7,7.0
+121,HI,Volcanic Eruption,4,4.0
+119,HI,Tsunami,3,3.0
+117,HI,Other,2,2.0
+120,HI,Typhoon,2,2.0
+116,HI,Mud/Landslide,1,1.0
+124,IA,Flood,722,39.07
+127,IA,Severe Storm,686,37.12
+122,IA,Biological,203,10.98
+125,IA,Hurricane,99,5.36
+126,IA,Severe Ice Storm,74,4.0
+128,IA,Snowstorm,43,2.33
+129,IA,Tornado,18,0.97
+123,IA,Drought,3,0.16
+130,ID,Biological,93,25.76
+134,ID,Flood,90,24.93
+136,ID,Severe Storm,60,16.62
+133,ID,Fire,53,14.68
+135,ID,Hurricane,44,12.19
+131,ID,Drought,9,2.49
+138,ID,Volcanic Eruption,8,2.22
+132,ID,Earthquake,3,0.83
+137,ID,Snowstorm,1,0.28
+140,IL,Flood,317,24.71
+143,IL,Severe Storm,275,21.43
+144,IL,Snowstorm,218,16.99
+139,IL,Biological,204,15.9
+145,IL,Tornado,139,10.83
+141,IL,Hurricane,102,7.95
+142,IL,Severe Ice Storm,28,2.18
+150,IN,Severe Storm,655,45.14
+151,IN,Snowstorm,226,15.58
+147,IN,Flood,208,14.33
+146,IN,Biological,185,12.75
+148,IN,Hurricane,92,6.34
+152,IN,Tornado,59,4.07
+149,IN,Severe Ice Storm,26,1.79
+159,KS,Severe Storm,1030,58.56
+153,KS,Biological,233,13.25
+155,KS,Flood,186,10.57
+156,KS,Hurricane,105,5.97
+160,KS,Snowstorm,70,3.98
+161,KS,Tornado,59,3.35
+158,KS,Severe Ice Storm,55,3.13
+154,KS,Fire,19,1.08
+157,KS,Other,2,0.11
+168,KY,Severe Storm,999,38.68
+164,KY,Flood,472,18.27
+169,KY,Snowstorm,332,12.85
+167,KY,Severe Ice Storm,248,9.6
+162,KY,Biological,240,9.29
+170,KY,Tornado,129,4.99
+165,KY,Hurricane,120,4.65
+163,KY,Fire,41,1.59
+166,KY,Other,1,0.04
+171,KY,Toxic Substances,1,0.04
+176,LA,Hurricane,1364,54.71
+175,LA,Flood,363,14.56
+173,LA,Coastal Storm,204,8.18
+179,LA,Severe Storm,163,6.54
+172,LA,Biological,144,5.78
+178,LA,Severe Ice Storm,136,5.46
+180,LA,Snowstorm,42,1.68
+177,LA,Other,41,1.64
+181,LA,Tornado,24,0.96
+174,LA,Fire,11,0.44
+182,LA,Toxic Substances,1,0.04
+188,MA,Hurricane,94,23.62
+192,MA,Snowstorm,93,23.37
+191,MA,Severe Storm,90,22.61
+187,MA,Flood,42,10.55
+183,MA,Biological,33,8.29
+184,MA,Coastal Storm,16,4.02
+186,MA,Fishing Losses,8,2.01
+190,MA,Severe Ice Storm,7,1.76
+185,MA,Fire,4,1.01
+189,MA,Other,4,1.01
+193,MA,Terrorist,4,1.01
+194,MA,Tornado,3,0.75
+197,MD,Hurricane,151,33.71
+199,MD,Snowstorm,126,28.12
+196,MD,Flood,64,14.29
+198,MD,Severe Storm,56,12.5
+195,MD,Biological,48,10.71
+200,MD,Tornado,3,0.67
+201,ME,Biological,623,61.14
+208,ME,Severe Storm,147,14.43
+205,ME,Flood,96,9.42
+209,ME,Snowstorm,81,7.95
+207,ME,Hurricane,34,3.34
+204,ME,Fishing Losses,16,1.57
+206,ME,Freezing,11,1.08
+202,ME,Coastal Storm,9,0.88
+203,ME,Fire,2,0.2
+211,MH,Drought,25,47.17
+214,MH,Typhoon,20,37.74
+213,MH,Flood,6,11.32
+210,MH,Coastal Storm,1,1.89
+212,MH,Fire,1,1.89
+215,MI,Biological,188,23.62
+224,MI,Snowstorm,174,21.86
+219,MI,Flood,147,18.47
+223,MI,Severe Storm,105,13.19
+221,MI,Hurricane,83,10.43
+217,MI,Drought,44,5.53
+225,MI,Tornado,22,2.76
+222,MI,Other,14,1.76
+220,MI,Freezing,10,1.26
+216,MI,Dam/Levee Break,7,0.88
+218,MI,Fire,1,0.13
+226,MI,Toxic Substances,1,0.13
+230,MN,Flood,661,42.29
+234,MN,Severe Storm,447,28.6
+227,MN,Biological,214,13.69
+231,MN,Hurricane,87,5.57
+228,MN,Drought,78,4.99
+236,MN,Tornado,39,2.5
+233,MN,Severe Ice Storm,19,1.22
+229,MN,Fire,13,0.83
+235,MN,Snowstorm,4,0.26
+232,MN,Other,1,0.06
+243,MO,Severe Storm,1339,49.52
+240,MO,Flood,522,19.3
+242,MO,Severe Ice Storm,373,13.79
+237,MO,Biological,230,8.51
+241,MO,Hurricane,115,4.25
+238,MO,Drought,94,3.48
+244,MO,Tornado,30,1.11
+239,MO,Fire,1,0.04
+247,MP,Typhoon,53,84.13
+245,MP,Biological,9,14.29
+246,MP,Flood,1,1.59
+250,MS,Hurricane,745,39.09
+253,MS,Severe Storm,642,33.68
+248,MS,Biological,166,8.71
+249,MS,Flood,125,6.56
+255,MS,Tornado,83,4.35
+254,MS,Snowstorm,72,3.78
+252,MS,Severe Ice Storm,71,3.73
+251,MS,Other,1,0.05
+256,MS,Toxic Substances,1,0.05
+259,MT,Fire,149,24.63
+263,MT,Severe Storm,134,22.15
+257,MT,Biological,129,21.32
+260,MT,Flood,124,20.5
+261,MT,Hurricane,56,9.26
+258,MT,Drought,6,0.99
+262,MT,Other,5,0.83
+264,MT,Snowstorm,1,0.17
+265,MT,Tornado,1,0.17
+270,NC,Hurricane,1304,62.21
+266,NC,Biological,207,9.88
+274,NC,Snowstorm,193,9.21
+273,NC,Severe Storm,143,6.82
+272,NC,Severe Ice Storm,84,4.01
+269,NC,Flood,63,3.01
+267,NC,Drought,49,2.34
+275,NC,Tornado,42,2.0
+268,NC,Fire,10,0.48
+271,NC,Mud/Landslide,1,0.05
+280,ND,Flood,653,48.05
+281,ND,Severe Storm,459,33.77
+276,ND,Biological,117,8.61
+277,ND,Coastal Storm,53,3.9
+282,ND,Snowstorm,47,3.46
+278,ND,Drought,18,1.32
+283,ND,Tornado,11,0.81
+279,ND,Fire,1,0.07
+290,NE,Severe Storm,689,46.4
+287,NE,Flood,376,25.32
+284,NE,Biological,205,13.8
+288,NE,Hurricane,93,6.26
+291,NE,Snowstorm,46,3.1
+292,NE,Tornado,36,2.42
+289,NE,Severe Ice Storm,28,1.89
+286,NE,Fire,10,0.67
+285,NE,Drought,2,0.13
+299,NH,Severe Storm,113,37.54
+300,NH,Snowstorm,52,17.28
+296,NH,Flood,51,16.94
+297,NH,Hurricane,50,16.61
+293,NH,Biological,20,6.64
+298,NH,Severe Ice Storm,10,3.32
+294,NH,Coastal Storm,3,1.0
+295,NH,Fire,2,0.66
+306,NJ,Hurricane,193,30.88
+309,NJ,Severe Storm,115,18.4
+310,NJ,Snowstorm,97,15.52
+305,NJ,Flood,70,11.2
+301,NJ,Biological,44,7.04
+303,NJ,Drought,42,6.72
+307,NJ,Other,26,4.16
+304,NJ,Fire,24,3.84
+308,NJ,Severe Ice Storm,10,1.6
+302,NJ,Coastal Storm,4,0.64
+311,NM,Biological,151,29.38
+313,NM,Fire,137,26.65
+314,NM,Flood,95,18.48
+316,NM,Severe Storm,90,17.51
+315,NM,Hurricane,33,6.42
+312,NM,Drought,8,1.56
+317,NV,Biological,88,32.12
+320,NV,Fire,79,28.83
+323,NV,Severe Storm,34,12.41
+324,NV,Snowstorm,31,11.31
+321,NV,Flood,19,6.93
+322,NV,Hurricane,17,6.2
+318,NV,Drought,5,1.82
+319,NV,Earthquake,1,0.36
+334,NY,Severe Storm,368,24.48
+331,NY,Hurricane,284,18.9
+335,NY,Snowstorm,254,16.9
+329,NY,Flood,215,14.3
+325,NY,Biological,130,8.65
+332,NY,Other,126,8.38
+328,NY,Fire,64,4.26
+333,NY,Severe Ice Storm,23,1.53
+326,NY,Drought,14,0.93
+338,NY,Winter Storm,13,0.86
+327,NY,Earthquake,6,0.4
+336,NY,Tornado,3,0.2
+337,NY,Toxic Substances,2,0.13
+330,NY,Human Cause,1,0.07
+344,OH,Severe Storm,566,44.18
+345,OH,Snowstorm,181,14.13
+339,OH,Biological,176,13.74
+340,OH,Flood,159,12.41
+346,OH,Tornado,93,7.26
+341,OH,Hurricane,90,7.03
+343,OH,Other,14,1.09
+342,OH,Mud/Landslide,2,0.16
+353,OK,Severe Storm,1005,40.62
+352,OK,Severe Ice Storm,596,24.09
+347,OK,Biological,239,9.66
+349,OK,Flood,225,9.09
+348,OK,Fire,212,8.57
+355,OK,Tornado,114,4.61
+351,OK,Hurricane,77,3.11
+354,OK,Snowstorm,4,0.16
+350,OK,Human Cause,2,0.08
+363,OR,Severe Storm,158,26.96
+360,OR,Fire,147,25.09
+362,OR,Flood,127,21.67
+356,OR,Biological,83,14.16
+357,OR,Coastal Storm,36,6.14
+358,OR,Drought,19,3.24
+361,OR,Fishing Losses,8,1.37
+359,OR,Earthquake,5,0.85
+364,OR,Tsunami,3,0.51
+367,PA,Flood,349,28.17
+368,PA,Hurricane,274,22.11
+370,PA,Severe Storm,258,20.82
+371,PA,Snowstorm,189,15.25
+365,PA,Biological,134,10.82
+372,PA,Tornado,15,1.21
+366,PA,Drought,13,1.05
+369,PA,Severe Ice Storm,7,0.56
+378,PR,Hurricane,1024,51.53
+377,PR,Flood,362,18.22
+380,PR,Severe Storm,302,15.2
+373,PR,Biological,156,7.85
+375,PR,Earthquake,112,5.64
+374,PR,Drought,25,1.26
+376,PR,Fire,5,0.25
+379,PR,Other,1,0.05
+381,PW,Typhoon,1,100.0
+383,RI,Hurricane,43,37.72
+386,RI,Snowstorm,33,28.95
+385,RI,Severe Storm,21,18.42
+382,RI,Biological,13,11.4
+384,RI,Other,2,1.75
+387,RI,Toxic Substances,2,1.75
+392,SC,Hurricane,541,57.13
+394,SC,Severe Storm,108,11.4
+393,SC,Severe Ice Storm,107,11.3
+388,SC,Biological,94,9.93
+391,SC,Flood,54,5.7
+389,SC,Drought,31,3.27
+395,SC,Tornado,7,0.74
+390,SC,Fire,5,0.53
+401,SD,Severe Storm,485,33.92
+400,SD,Flood,413,28.88
+396,SD,Biological,286,20.0
+402,SD,Snowstorm,70,4.9
+397,SD,Coastal Storm,66,4.62
+398,SD,Drought,62,4.34
+399,SD,Fire,27,1.89
+404,SD,Winter Storm,19,1.33
+403,SD,Tornado,2,0.14
+411,TN,Severe Storm,749,46.67
+407,TN,Flood,268,16.7
+405,TN,Biological,190,11.84
+413,TN,Tornado,135,8.41
+408,TN,Hurricane,95,5.92
+410,TN,Severe Ice Storm,75,4.67
+412,TN,Snowstorm,57,3.55
+406,TN,Fire,24,1.5
+414,TN,Winter Storm,11,0.69
+409,TN,Other,1,0.06
+421,TX,Hurricane,1303,25.19
+418,TX,Fire,1225,23.68
+424,TX,Severe Storm,760,14.69
+423,TX,Severe Ice Storm,554,10.71
+415,TX,Biological,515,9.96
+419,TX,Flood,503,9.72
+417,TX,Drought,149,2.88
+422,TX,Other,56,1.08
+425,TX,Tornado,50,0.97
+416,TX,Coastal Storm,42,0.81
+420,TX,Freezing,16,0.31
+431,UT,Flood,73,29.32
+426,UT,Biological,72,28.92
+430,UT,Fire,38,15.26
+427,UT,Coastal Storm,29,11.65
+428,UT,Drought,27,10.84
+432,UT,Severe Storm,7,2.81
+429,UT,Earthquake,2,0.8
+433,UT,Tornado,1,0.4
+440,VA,Hurricane,877,34.75
+443,VA,Snowstorm,462,18.3
+442,VA,Severe Storm,434,17.19
+438,VA,Flood,281,11.13
+434,VA,Biological,276,10.94
+435,VA,Drought,100,3.96
+439,VA,Freezing,39,1.55
+441,VA,Severe Ice Storm,33,1.31
+437,VA,Fire,11,0.44
+436,VA,Earthquake,10,0.4
+444,VA,Terrorist,1,0.04
+448,VI,Hurricane,53,66.25
+447,VI,Flood,7,8.75
+450,VI,Severe Storm,7,8.75
+445,VI,Biological,6,7.5
+446,VI,Drought,6,7.5
+449,VI,Other,1,1.25
+456,VT,Severe Storm,153,45.27
+453,VT,Flood,95,28.11
+454,VT,Hurricane,42,12.43
+451,VT,Biological,28,8.28
+455,VT,Severe Ice Storm,9,2.66
+457,VT,Snowstorm,9,2.66
+452,VT,Drought,2,0.59
+464,WA,Flood,291,29.72
+467,WA,Severe Storm,250,25.54
+462,WA,Fire,192,19.61
+458,WA,Biological,107,10.93
+459,WA,Coastal Storm,39,3.98
+468,WA,Volcanic Eruption,39,3.98
+461,WA,Earthquake,30,3.06
+460,WA,Drought,16,1.63
+463,WA,Fishing Losses,6,0.61
+465,WA,Mud/Landslide,6,0.61
+466,WA,Severe Ice Storm,3,0.31
+474,WI,Severe Storm,293,32.85
+472,WI,Flood,206,23.09
+469,WI,Biological,167,18.72
+473,WI,Hurricane,73,8.18
+470,WI,Drought,66,7.4
+476,WI,Tornado,47,5.27
+475,WI,Snowstorm,39,4.37
+471,WI,Fire,1,0.11
+485,WV,Severe Storm,461,37.42
+481,WV,Flood,292,23.7
+486,WV,Snowstorm,148,12.01
+482,WV,Hurricane,141,11.44
+477,WV,Biological,110,8.93
+480,WV,Fire,24,1.95
+479,WV,Drought,21,1.7
+483,WV,Mud/Landslide,21,1.7
+478,WV,Chemical,9,0.73
+484,WV,Severe Ice Storm,5,0.41
+487,WY,Biological,48,37.5
+489,WY,Fire,26,20.31
+490,WY,Flood,24,18.75
+492,WY,Severe Storm,21,16.41
+488,WY,Drought,4,3.12
+491,WY,Severe Ice Storm,2,1.56
+493,WY,Tornado,2,1.56
+494,WY,Toxic Substances,1,0.78
