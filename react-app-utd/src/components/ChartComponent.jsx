@@ -49,8 +49,8 @@ export const ChartComponent = ({ currentState, setIncident }) => {
    
         const labels = currentStateData.map((incident) => incident.incident_type);
         const percentages = currentStateData.map((incident) => incident.percentage);
-        setIncident(`${labels[0]} percentage in ${currentState}: ${percentages[0]}%`)
-        console.log(`${labels[0]} percentage in ${currentState}: ${percentages[0]}%`)
+        setIncident(`${labels[0]}PercentageIn${currentState}is${percentages[0]}Percent`)
+        console.log(`${labels[0]}PercentageIn${currentState}is${percentages[0]}Percent`)
         const chartData = {
             labels: labels,
             datasets: [{

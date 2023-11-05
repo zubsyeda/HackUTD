@@ -32,7 +32,7 @@ router.get('/:keyword', (req, res, next) => {
 			newsItems.forEach((item) => {
 				const itemObject = {
 					name: item.name,
-					image: item.image.thumbnail.contentUrl,
+					image: item.image.thumbnail.contentUrl ?? '',
 					description: item.description,
 					url: item.url,
 				};
