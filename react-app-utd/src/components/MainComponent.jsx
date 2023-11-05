@@ -19,7 +19,7 @@ export const MainComponent = ({ setBusiness, setState}) => {
     return (
         <div className="maincomponent">
             <div>
-                <h1>InsuranceHelper</h1>
+                <h1>SafeBiz</h1>
                 <p>This web application will output the top natural disasters that happen in your state to help you get an idea of the insurance your small business may need</p>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
