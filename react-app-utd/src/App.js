@@ -57,7 +57,7 @@ function App() {
   return (
     <div className="App">
       <div className='maincomponent'>
-        <h1>InsurancePlanner</h1>
+        <h1>SafeBiz</h1>
         <div className='container'>
           <p>This web application will output the top natural disasters that happen in your state to help you get an idea </p>
           <p>of the insurance your small business may need</p>
