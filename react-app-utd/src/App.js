@@ -3,6 +3,8 @@ import './App.css';
 import { BasicButtonComponent } from './components/BasicButtonComponent';
 import { ChartComponent } from './components/ChartComponent';
 import { MainComponent } from './components/MainComponent';
+import { FeedBackComponent } from './components/FeedBackComponent';
+import { CardDeckContainer } from './components/CardDeckContainer';
 
 
 function CardContainer() {
@@ -46,23 +48,39 @@ function CardContainer() {
 
 
 function App() {
-    const [business, setBusiness] = useState('')
-    const [currentState, setCurrentState] = useState('')
+    const [business, setBusiness] = useState('');
+    const [currentState, setCurrentState] = useState('');
+    const [incident, setIncident] = useState('');
 
     return (
       <div className="App">
         <MainComponent setBusiness={setBusiness} setState={setCurrentState}/>
 
 
-        <div className="secondcomponent">
+        {/* <div className="secondcomponent"> */}
           {currentState && (
-                <ChartComponent currentState={currentState}/>
+                <ChartComponent currentState={currentState} setIncident={setIncident}/>
                 
             )}
-          <h2>News Outlet</h2>
-          <CardContainer/>
-          <h2>Customer Response Analysis</h2>
-        </div>
+        {/* </div>   */}
+        {/* {currentState && (
+            <div style={{ width: '100%'}}>
+            <FeedBackComponent business={business} currentState={currentState} incident={incident}/>
+            </div>
+        )} */}
+        {/* {currentState && (
+            <div>
+                <div>
+                <span>News Outlet</span>
+                </div>
+                <div>
+                    <CardContainer />
+                </div>
+            </div>
+        )} */}
+        {currentState && (
+            <CardDeckContainer currentState={currentState} business={business}/>
+        )}
       </div>
     );
 }

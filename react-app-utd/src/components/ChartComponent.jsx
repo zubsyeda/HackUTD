@@ -2,10 +2,10 @@ import React, { useRef } from 'react';
 import Papa from 'papaparse';
 import Chart from 'chart.js/auto'
 
-export const ChartComponent = ({ currentState }) => {
+export const ChartComponent = ({ currentState, setIncident }) => {
     // const [chartData, setChartData] = useState(null);
     // const [currentState, setcurrentState] = useState('AK')
-
+    
     const chartRef = useRef(null);
 
     async function fetchData(){
@@ -49,8 +49,8 @@ export const ChartComponent = ({ currentState }) => {
    
         const labels = currentStateData.map((incident) => incident.incident_type);
         const percentages = currentStateData.map((incident) => incident.percentage);
-
-
+        setIncident(`${labels[0]} percentage in ${currentState}: ${percentages[0]}%`)
+        console.log(`${labels[0]} percentage in ${currentState}: ${percentages[0]}%`)
         const chartData = {
             labels: labels,
             datasets: [{
@@ -79,10 +79,7 @@ export const ChartComponent = ({ currentState }) => {
                     }
                 }
             });
-
         }
-
-
     };
 
     React.useEffect(() => {
