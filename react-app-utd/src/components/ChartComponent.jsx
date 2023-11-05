@@ -87,7 +87,7 @@ export const ChartComponent = ({ currentState, setIncident }) => {
     }, [currentState])
 
     return (
-        <div>
+        <div style={{ paddingLeft: '170px'}}>
             <canvas id="myChart" width="400" height="200"></canvas>
         </div>
     )
