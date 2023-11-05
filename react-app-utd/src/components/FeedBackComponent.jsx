@@ -26,9 +26,13 @@ export const FeedBackComponent = ({ businessType, state, incident }) => {
 
           if (response.ok){
             const responseData = await response.json()
-            console.log(responseData.result)
+            const temp = responseData.result
+            // console.log(JSON.parse(responseData.result))
+            // console.log(temp)
+
             if (!messageResponse){
-                setMessageResponse(responseData.result)
+
+                setMessageResponse((responseData.result))
 
             }
           }
@@ -60,9 +64,14 @@ export const FeedBackComponent = ({ businessType, state, incident }) => {
             </div>
             <div style={{ display: 'flex', flexDirection: 'row', width: '100%', padding: '0px 0px 0px 70px' }}>
                 {messageResponse && (
-                      <p>
-                        {messageResponse}
-                      </p>
+                    <div style={{ display: 'flex', flexDirection: 'row', width: '100%', padding: '10px' }}>
+                        <p style={{ color:'White' }}>{messageResponse}</p>
+                    {/* //    {messageResponse.map((item, index ) => (
+                    //     <div key={index} style={{flex:1}}>
+                    //         <FeedBackBoxComponent key={index} name={item.name} explaination={item.explaination}/>
+                    //     </div>
+                    // ))} */}
+                    </div>
                 )}
               
 
