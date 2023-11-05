@@ -21,7 +21,7 @@ app.use((req, res, next) => {
     next();
 });
 
-const resultRoutes = require('./routes/result-route-get');
+const resultRoutes = require('./routes/result-route-post');
 app.use('/api/chatgpt', resultRoutes);
 
 const bingRoutes = require('./routes/bing-route');

@@ -21,9 +21,17 @@ export const CardComponent = ({ description, image, name, url }) => {
                     <span>{name}</span>
                 </div>
                 <div>
-                    <a href={url} target="_blank" rel="noopener noreferrer">
-                    <img src={image}/>
-                    </a>
+                    {image ? (
+                        <a href={url} target="_blank" rel="noopener noreferrer">
+                        <img src={image}/>
+                        </a>
+
+                    ) : (
+                        <div style={{width:'60px', height:'60px', backgroundColor:'#ccc'}}>
+
+                        </div>
+                    )}
+                    
                 </div>
             </div>
             <div>

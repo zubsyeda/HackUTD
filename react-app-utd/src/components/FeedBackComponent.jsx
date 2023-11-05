@@ -7,26 +7,28 @@ export const FeedBackComponent = ({ businessType, state, incident }) => {
 
     async function fetchData (){
         console.log("This function is called!")
-        const apiUrl = `http://localhost:5001/api/chatgpt/${state}/${businessType}/${incident}`;
+        //const apiUrl = `http://localhost:5001/api/chatgpt/${state}/${businessType}/${incident}`;
+        const apiUrl = `http://localhost:5001/api/chatgpt`;
+
         console.log(apiUrl)
-        // var jsonData = {
-        //     "state": currentState,
-        //     "businessType": business,
-        //     "incidentStatistic": incident
-        // }
+        var jsonData = {
+            "state": state,
+            "businessType": businessType,
+            "incidentStatistic": incident
+        }
 
         try {
             const response = await fetch(apiUrl, {
                 // mode: 'no-cors',
-                method: 'GET',
+                method: 'POST',
            
-                // body: JSON.stringify(jsonData),
+                body: JSON.stringify(jsonData),
             }).then(response => {
                 if(response.ok){
                   
                     // console.log(response)
                     response.json().then(json => {
-                        console.log(json)
+                        console.log(json.result)
                     })
                 } else{
                 
