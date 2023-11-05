@@ -5,15 +5,15 @@ const openai = require('openai');
 const apiKey = process.env.OPENAI_API_KEY;
 const openaiClient = new openai({ key: apiKey });
 
-router.get('/:stateName', (req, res, next) => {
-	const stateName = req.params.stateName;
+router.get('/:insuranceName/:stateName/:businessName', (req, res, next) => {
+	const params = req.params;
 	// queries for chatgpt
-	const query = `Tell me the weather in ${stateName}`;
+	const query = `Tell me why ${params.insuranceName} insurance is important in ${params.stateName} when I open business of ${params.businessName}`;
 
 	// call ChatGPT API
 	openaiClient.chat.completions
 		.create({
-			model: 'gpt-3.5-turbo', // GPT-3.5 Davinci engine
+			model: 'gpt-3.5-turbo',
 			messages: [
 				{ role: 'system', content: 'You are a helpful assistant.' },
 				{ role: 'user', content: query },
