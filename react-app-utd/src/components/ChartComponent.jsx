@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 import Papa from 'papaparse';
 import Chart from 'chart.js/auto'
 
-export const ChartComponent = () => {
-    const [chartData, setChartData] = useState(null);
-    const [selectedState, setSelectedState] = useState('AK')
+export const ChartComponent = ({ selectedState }) => {
+    // const [chartData, setChartData] = useState(null);
+    // const [selectedState, setSelectedState] = useState('AK')
 
-    const chart = ""
+    const chartRef = useRef(null);
 
     async function fetchData(){
         try { 
@@ -61,26 +61,33 @@ export const ChartComponent = () => {
                 borderWidth: 1,
             }]
         };
-
-        const config = {
-            type: 'bar',
-            data: chartData,
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
+        if (chartRef.current) {
+            // If the chart already exists, destroy it before creating a new one
+            chartRef.current.data = chartData;
+            chartRef.current.update();
+            // chartRef.current.destroy();
+        } else{
+            const ctx = document.getElementById('myChart').getContext('2d');
+            chartRef.current = new Chart(ctx, {
+                type: 'bar',
+                data: chartData,
+                options: {
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
                     }
                 }
-            }
+            });
+
         }
 
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const myChart = new Chart(ctx, config);
+
     };
 
     React.useEffect(() => {
         fetchData()
-    }, [])
+    }, [selectedState])
 
     return (
         <div>
