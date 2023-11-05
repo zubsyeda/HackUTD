@@ -21,7 +21,7 @@ export const CardDeckContainer = ({ currentState, business }) => {
                         const firstThreeResults= json.result.slice(0, 3);
                         setNewArticles(firstThreeResults)
 
-                        console.log(firstThreeResults)
+                        // console.log(firstThreeResults)
                     })
                 }
             })            

@@ -38,7 +38,7 @@ router.get('/:keyword', (req, res, next) => {
 				};
 				result.push(itemObject);
 			});
-			console.log(result);
+			// console.log(result);
 			res.json({ result });
 		})
 		.catch((error) => {

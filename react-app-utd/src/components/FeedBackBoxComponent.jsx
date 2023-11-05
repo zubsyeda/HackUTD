@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const FeedBackBoxComponent = () => {
+export const FeedBackBoxComponent = ({ name, explaination }) => {
 
 
     
@@ -14,13 +14,13 @@ export const FeedBackBoxComponent = () => {
         }}>
             <div style={{ padding:'10px'}}>
                 <div>
-                    <span style={{ fontWeight: 'bold'}}>Recommended Policies: </span>
+                    <span style={{ fontWeight: 'bold'}}>{name} </span>
                 </div>
                 <div style={{
                     wordWrap: 'break-word',
                 }}>
                     <span>
-                        Text goes heresadfasfsadfadsafadsdfasadfasdfsdasdfasfdfadsfsfdcadfasfsfdsafdsafds
+                        {explaination}
                     </span>
                 </div>
             </div>
