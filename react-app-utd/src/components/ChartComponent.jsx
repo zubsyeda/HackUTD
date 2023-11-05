@@ -2,9 +2,9 @@ import React, { useRef } from 'react';
 import Papa from 'papaparse';
 import Chart from 'chart.js/auto'
 
-export const ChartComponent = ({ selectedState }) => {
+export const ChartComponent = ({ currentState }) => {
     // const [chartData, setChartData] = useState(null);
-    // const [selectedState, setSelectedState] = useState('AK')
+    // const [currentState, setcurrentState] = useState('AK')
 
     const chartRef = useRef(null);
 
@@ -38,23 +38,23 @@ export const ChartComponent = ({ selectedState }) => {
                 percentage: parseFloat(entry.percentage),
             });
         });
+        // console.log(groupedData)
         return groupedData
     }
 
     function preprocessData(data){
         const groupedData = groupDataByState(data);
-        const selectedStateData = groupedData[selectedState];
-        // setChartData(selectedStateData);
-        console.log(selectedStateData);
-        const labels = selectedStateData.map((incident) => incident.incident_type);
-        const percentages = selectedStateData.map((incident) => incident.percentage);
-        console.log(labels)
-        console.log(percentages)
+     
+        const currentStateData = groupedData[currentState];
+   
+        const labels = currentStateData.map((incident) => incident.incident_type);
+        const percentages = currentStateData.map((incident) => incident.percentage);
+
 
         const chartData = {
             labels: labels,
             datasets: [{
-                label: `Incident Rates for ${selectedState}`,
+                label: `Incident Rates for ${currentState}`,
                 data: percentages,
                 backgroundColor: 'rgba(75, 192, 192, 0.2)',
                 borderColor: 'rgba(75, 192, 192, 1)',
@@ -87,7 +87,7 @@ export const ChartComponent = ({ selectedState }) => {
 
     React.useEffect(() => {
         fetchData()
-    }, [selectedState])
+    }, [currentState])
 
     return (
         <div>

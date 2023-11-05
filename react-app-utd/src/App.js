@@ -46,17 +46,19 @@ function CardContainer() {
 
 
 function App() {
-    const [ selectedState, setSelectedState] = React.useState('')
+    const [business, setBusiness] = useState('')
+    const [currentState, setCurrentState] = useState('')
 
     return (
       <div className="App">
-        <MainComponent setSelectedState={setSelectedState}/>
+        <MainComponent setBusiness={setBusiness} setState={setCurrentState}/>
 
 
         <div className="secondcomponent">
-          {selectedState && (
-                  <ChartComponent selectedState={selectedState}/>
-              )}
+          {currentState && (
+                <ChartComponent currentState={currentState}/>
+                
+            )}
           <h2>News Outlet</h2>
           <CardContainer/>
           <h2>Customer Response Analysis</h2>
