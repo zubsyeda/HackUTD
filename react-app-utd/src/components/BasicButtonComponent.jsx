@@ -21,6 +21,7 @@ export const BasicButtonComponent= ({ setSelectedState }) => {
             id="state-dropdown"
             title="Select State"
             onSelect={handleSelect}
+            style={{ background: 'transparent' }}
             >
             <Dropdown.Menu style={{ maxHeight: '200px', overflowY: 'auto' }}>
                 {visibleStates.map((state) => (
