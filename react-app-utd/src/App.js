@@ -62,13 +62,20 @@ function App() {
             
         )}
         {currentState && (
-            <div style={{ width: '100%'}}>
+            <div style={{ width: '100%', paddingTop:'40px'}}>
             <FeedBackComponent businessType={business} state={currentState} incident={incident}/>
             </div>
         )}
        
         {currentState && (
-            <CardDeckContainer currentState={currentState} business={business}/>
+            <div style={{ paddingTop:'30px'}}>
+                <div>
+                    <span style={{ paddingLeft:'20px', fontWeight:'bold', fontSize: '30px'}}>Recent News Articles</span>
+                </div>
+                <div>
+                <CardDeckContainer currentState={currentState} business={business}/>
+                </div>
+            </div>
         )}
       </div>
     );
